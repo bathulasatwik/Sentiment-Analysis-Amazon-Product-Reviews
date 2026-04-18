@@ -65,7 +65,6 @@ The objective is to move beyond basic sentiment classification and extract **sem
 - Tends to **overestimate positivity**  
 - Struggles with contextual nuance  
 
----
 
 ## 3. Transformer Sentiment Distribution
 - Highly **bimodal**:
@@ -76,7 +75,6 @@ The objective is to move beyond basic sentiment classification and extract **sem
 - Behaves like a strong classifier  
 - Better captures context and semantics  
 
----
 
 ## 4. Sentiment Difference (VADER vs Transformer)
 
@@ -97,7 +95,6 @@ Gap = Transformer Score - VADER Score
   - Complex phrasing  
   - Mixed sentiment  
 
----
 
 ## 5. Topic Modeling (BERTopic)
 
@@ -120,7 +117,6 @@ Gap = Transformer Score - VADER Score
 - Topics are **clean and interpretable**  
 - Model captures **real product categories**  
 
----
 
 ## 6. Clustering Performance
 
@@ -138,7 +134,6 @@ Gap = Transformer Score - VADER Score
 - Useful for grouping trends  
 - Not for strict segmentation  
 
----
 
 # Key Insights
 
@@ -146,22 +141,16 @@ Gap = Transformer Score - VADER Score
 - VADER → smooth, biased toward positivity  
 - Transformer → confident, context-aware  
 
----
 
 ### 2. Semantic Structure
 - Topics reveal clear product categories  
 - Embeddings capture meaningful relationships  
 
----
 
 ### 3. Clustering Reality
 - Weak separation is natural in text data  
 - Still useful for aggregation and trend discovery  
 
----
 
-### 4. Core Takeaway
-> Sentiment analysis alone is not enough — combining it with semantic structure (topics + clusters) provides deeper insights.
 
----
 
