@@ -1,18 +1,26 @@
 
 # Amazon Reviews NLP Analysis Pipeline
 
-## Overview
-This project implements an end-to-end **Natural Language Processing (NLP) pipeline** to analyze customer reviews using:
+# Sentiment and Topic Analysis of Amazon Product Reviews using NLP
 
-- Rule-based sentiment analysis  
-- Transformer-based models  
-- Sentence embeddings  
-- Topic modeling  
-- Clustering  
+## Project Overview
+This project builds an end-to-end NLP pipeline to analyze sentiment and extract themes from 5,000+ Amazon product reviews. It compares rule-based and transformer-based sentiment models and uses topic modeling and clustering to uncover meaningful patterns in customer feedback.
 
-The objective is to move beyond basic sentiment classification and extract **semantic structure + actionable insights** from text data.
+## Methods
+- VADER (rule-based sentiment analysis)
+- Transformer-based sentiment model (BERT)
+- BERTopic for topic modeling
+- Sentence-transformer embeddings
+- KMeans clustering
 
+## Key Findings
+- Transformer models produce more extreme sentiment predictions compared to VADER
+- VADER tends to assign more positive sentiment to neutral or mildly negative reviews
+- Product reviews naturally cluster into domain-specific categories (electronics, apparel, books, media)
+- Sentiment varies significantly across clusters, indicating domain-dependent perception
 
+## Tech Stack
+Python, HuggingFace, NLTK, Sentence-Transformers, BERTopic, Scikit-learn
 
 ## Dataset
 - **Source:** Amazon Polarity Dataset  
@@ -23,22 +31,6 @@ The objective is to move beyond basic sentiment classification and extract **sem
 
 
 
-# Pipeline
-
-## 1. Preprocessing
-- Lowercasing  
-- Removing punctuation, URLs  
-- Stopword removal  
-
-
-
-## 2. Sentiment Models
-
-### Rule-Based
-- VADER Sentiment Analyzer  
-
-### Transformer
-- DistilBERT (fine-tuned for sentiment analysis)  
 
 
 
@@ -134,22 +126,6 @@ Gap = Transformer Score - VADER Score
 - Useful for grouping trends  
 - Not for strict segmentation  
 
-
-# Key Insights
-
-### 1. Model Behavior
-- VADER → smooth, biased toward positivity  
-- Transformer → confident, context-aware  
-
-
-### 2. Semantic Structure
-- Topics reveal clear product categories  
-- Embeddings capture meaningful relationships  
-
-
-### 3. Clustering Reality
-- Weak separation is natural in text data  
-- Still useful for aggregation and trend discovery  
 
 
 
